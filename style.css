@@ -18,12 +18,17 @@ body {
 
 h1 {
   text-align: center;
+  color: #a1c349;
 }
 
 h2 {
   text-align: center;
-  color: #d3d3d3;
+  color: #a1c349;
 }
+
+h3 {
+  text-align: center;
+  colour: #cad593;
 
 /* NAVIGATION */
 /* Style the navbar */
@@ -31,14 +36,14 @@ h2 {
   position: sticky;
   top: 0;
   overflow: hidden;
-  background-color: #333;
+  background-color: #87a330;
 }
 
 /* Navbar links */
 #navbar a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
+  color: #000000;
   text-align: center;
   padding: 14px;
   text-decoration: none;
