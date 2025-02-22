@@ -18,12 +18,12 @@ body {
 
 h1 {
   text-align: center;
-  color: #14213d;
+  color: #ff6600;
 }
 
 h2 {
   text-align: center;
-  color: #d16014;
+  color: #739f80;
 }
 
 h3 {
@@ -37,7 +37,7 @@ h3 {
   position: sticky;
   top: 0;
   width: 100%;
-  background-color: #47624f; /* Updated background color */
+  background-color: #739f80; /* Updated background color */
   z-index: 1000;
   display: flex;
   justify-content: flex-end;
@@ -46,15 +46,15 @@ h3 {
 
 /* Navbar links */
 #navbar a {
-  color: #d16014;
+  color: #ff6600;
   text-align: center;
   padding: 14px 20px;
   text-decoration: none;
 }
 
 #navbar a:hover {
-  background-color: #d16014;
-  color: #47624f;
+  background-color: #ff6600;
+  color: #739f80;
 }
 
 /* Page content */
