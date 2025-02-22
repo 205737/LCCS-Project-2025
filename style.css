@@ -41,7 +41,7 @@ h3 {
 
 /* Navbar links */
 #navbar a {
-  float: right;
+  float: left;
   display: block;
   color: #000000;
   text-align: center;
