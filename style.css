@@ -32,28 +32,21 @@ h3 {
 
 /* NAVIGATION */
 /* Style the navbar */
-.navbar {
+#navbar {
   position: sticky;
   top: 0;
-  width: 100%;
-  background-color: #87a330; /* Updated background color */
-  z-index: 1000;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 20px;
+  overflow: hidden;
+  background-color: #333;
 }
 
 /* Navbar links */
-.navbar a {
+#navbar a {
+  float: left;
+  display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 14px 20px;
+  padding: 14px;
   text-decoration: none;
-}
-
-.navbar a:hover {
-  background-color: #ddd;
-  color: black;
 }
 
 /* Page content */
