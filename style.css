@@ -50,6 +50,11 @@ nav a:hover {
   background-color: var(--color-bright-blue);
 }
 
+nav .active {
+  background-color: var(--color-bright-blue); /* Highlight color */
+  color: white; /* Text color for active link */
+}
+
 section {
   padding: 20px;
   background-color: var(--color-mid-dark);
