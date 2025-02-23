@@ -6,12 +6,19 @@
   --color-light-gray: #b3b4bd;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Ensures padding and borders don't mess with layout */
+}
+
 body {
   background-color: var(--color-dark);
   color: var(--color-light-gray);
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
+  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  display: flex;
+  flex-direction: column;
 }
 
 header {
@@ -28,7 +35,7 @@ nav {
   z-index: 1000;
   padding: 15px;
   display: flex;
-  justify-content: flex-end;  /* Align links to the right */
+  justify-content: flex-end;  /* Align the links to the right */
   align-items: center;
 }
 
@@ -48,6 +55,7 @@ section {
   background-color: var(--color-mid-dark);
   margin-top: 20px;
   border-radius: 8px;
+  margin: 0 15px; /* Adds space on the sides of the section */
 }
 
 footer {
@@ -55,4 +63,5 @@ footer {
   color: var(--color-light-gray);
   text-align: center;
   padding: 10px;
+  margin-top: auto; /* Pushes the footer to the bottom */
 }
