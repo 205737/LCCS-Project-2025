@@ -28,7 +28,7 @@ nav {
   z-index: 1000;
   padding: 15px;
   display: flex;
-  justify-content: space-between;  /* Align items at both ends */
+  justify-content: flex-end;  /* Align links to the right */
   align-items: center;
 }
 
@@ -41,23 +41,6 @@ nav a {
 
 nav a:hover {
   background-color: var(--color-bright-blue);
-}
-
-nav .right-buttons {
-  display: flex;  /* For positioning the buttons */
-}
-
-button {
-  background-color: var(--color-bright-blue);
-  color: var(--color-light-gray);
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-left: 10px;  /* Space between buttons */
-}
-
-button:hover {
-  background-color: var(--color-deep-blue);
 }
 
 section {
