@@ -1,63 +1,75 @@
-/* Base Styles */
-html, body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
+:root {
+  --color-dark: #141619;
+  --color-mid-dark: #2c2e3a;
+  --color-deep-blue: #050a44;
+  --color-bright-blue: #0a21c0;
+  --color-light-gray: #b3b4bd;
 }
 
 body {
-  background-image: url(../assets/background_3.jpg);
-  background-repeat: no-repeat;
-  background-position: right top;
-  background-attachment: fixed;
-  background-size: cover;
+  background-color: var(--color-dark);
+  color: var(--color-light-gray);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
+header {
+  background-color: var(--color-deep-blue);
+  color: var(--color-light-gray);
+  padding: 20px;
   text-align: center;
-  color: #ff6600;
 }
 
-h2 {
-  text-align: center;
-  color: #739f80;
-}
-
-h3 {
-  text-align: center;
-  colour: #a0ced9;
-}
-
-/* NAVIGATION */
-/* Style the navbar */
-#navbar {
+nav {
+  background-color: var(--color-mid-dark);
   position: sticky;
   top: 0;
-  width: 100%;
-  background-color: #1a3823; /* Updated background color */
   z-index: 1000;
+  padding: 15px;
   display: flex;
-  justify-content: flex-end;
-  padding: 0 20px;
+  justify-content: space-between;  /* Align items at both ends */
+  align-items: center;
 }
 
-/* Navbar links */
-#navbar a {
-  color: #ff6600;
-  text-align: center;
-  padding: 14px 20px;
+nav a {
+  color: var(--color-light-gray);
   text-decoration: none;
+  padding: 10px;
+  margin: 0 10px;
 }
 
-#navbar a:hover {
-  background-color: #ff6600;
-  color: #14213d;
+nav a:hover {
+  background-color: var(--color-bright-blue);
 }
 
-/* Page content */
-.content {
-  padding: 16px;
+nav .right-buttons {
+  display: flex;  /* For positioning the buttons */
+}
+
+button {
+  background-color: var(--color-bright-blue);
+  color: var(--color-light-gray);
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;  /* Space between buttons */
+}
+
+button:hover {
+  background-color: var(--color-deep-blue);
+}
+
+section {
+  padding: 20px;
+  background-color: var(--color-mid-dark);
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+footer {
+  background-color: var(--color-deep-blue);
+  color: var(--color-light-gray);
+  text-align: center;
+  padding: 10px;
 }
