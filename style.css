@@ -4,6 +4,7 @@
   --color-deep-blue: #050a44;
   --color-bright-blue: #0a21c0;
   --color-light-gray: #b3b4bd;
+  /* i.e. background-colour: var(--color-light-red); */
 }
 
 * {
@@ -53,14 +54,6 @@ nav a:hover {
 nav .active {
   background-color: var(--color-bright-blue); /* Highlight color */
   color: white; /* Text color for active link */
-}
-
-li {
-  border-right: 1px solid #b3b4bd;
-}
-
-li:last-child {
-  border-right: none;
 }
 
 section {
