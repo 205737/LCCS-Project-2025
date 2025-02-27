@@ -56,11 +56,11 @@ nav .active {
 }
 
 li {
-  border-left: 1px solid #b3b4bd;
+  border-right: 1px solid #b3b4bd;
 }
 
 li:last-child {
-  border-left: none;
+  border-right: none;
 }
 
 section {
