@@ -71,3 +71,8 @@ footer {
   padding: 10px;
   margin-top: auto; /* Pushes the footer to the bottom */
 }
+
+#graph-container {
+  margin-top: 60px; /* Adjust based on your nav height */
+  height: calc(100vh - 80px); /* Adjust height dynamically */
+}
