@@ -57,11 +57,11 @@ nav .active {
 }
 
 section {
-  padding: 20px;
-  background-color: var(--color-mid-dark);
-  margin-top: 20px;
-  border-radius: 8px;
-  margin: 0 15px; /* Adds space on the sides of the section */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Adjust if needed */
 }
 
 footer {
@@ -73,6 +73,10 @@ footer {
 }
 
 #graph-container {
-  margin-top: 60px; /* Adjust based on your nav height */
-  height: calc(100vh - 80px); /* Adjust height dynamically */
+  height: 80vh; /* Makes sure the graph takes up most of the screen */
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
