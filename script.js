@@ -9,9 +9,16 @@ document.addEventListener("DOMContentLoaded", function () {
     let responses = JSON.parse(localStorage.getItem("responses")) || [];
     function updateSummary() {
         let total = responses.length;
-        let booleanResponses = responses.filter(r => r.recommend === "true").length; // Fixed
+        let trueCount = responses.filter(r => r.recommend === "true").length;
+        let falseCount = responses.filter(r => r.recommend === "false").length;
         totalResponses.textContent = total;
-        booleanCount.textContent = booleanResponses;
+        if (trueCount > falseCount) {
+            booleanCount.textContent = "True";
+        } else if (falseCount > trueCount) {
+            booleanCount.textContent = "False";
+        } else {
+            booleanCount.textContent = "Equal";
+        }
     }
     updateSummary();
     form.addEventListener("submit", function (event) {
