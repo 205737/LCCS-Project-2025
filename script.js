@@ -5,23 +5,19 @@ function submitEmail() {
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.getElementById("feedbackForm");
     const totalResponses = document.getElementById("totalResponses");
-    const yesCount = document.getElementById("yesCount");
-    const noCount = document.getElementById("noCount");
+    const booleanCount = document.getElementById("booleanCount");
     let responses = JSON.parse(localStorage.getItem("responses")) || [];
     function updateSummary() {
         let total = responses.length;
-        let yesResponses = responses.filter(r => r.recommend === "yes").length;
-        let noResponses = responses.filter(r => r.recommend === "no").length;
+        let booleanResponses = responses.filter(r => r.recommend === "boolean").length;
 
         totalResponses.textContent = total;
-        yesCount.textContent = yesResponses;
-        noCount.textContent = noResponses;
+        booleanCount.textContent = booleanResponses;
     }
     updateSummary();
     form.addEventListener("submit", function (event) {
         event.preventDefault();
         const name = document.getElementById("name").value.trim();
-        const age = parseInt(document.getElementById("age").value);
         const recommend = document.querySelector('input[name="recommend"]:checked')?.value;
         const nameRegex = /^[A-Za-z\s-]+$/;
         if (!name.match(nameRegex)) {
