@@ -67,28 +67,41 @@
     </section>
     <br>
     <section>
-      <h2>How fast is your internet?</h2>
-      <p>Check your speed and compare it to others.</p>
-      <button>Start Test</button>
+
+    <h2>Questionnaire</h2>
+      <form id="feedbackForm">
+          <label for="name">Name:</label>
+          <input type="text" id="name" required><br><br>
+  
+          <label for="age">Age:</label>
+          <input type="number" id="age" required><br><br>
+  
+          <label>Have you travelled to any of these countries?</label><br>
+          <input type="radio" id="yes" name="recommend" value="yes" required> Yes
+          <input type="radio" id="no" name="recommend" value="no"> No <br><br>
+  
+          <button type="submit">Submit</button>
+      </form>
+  
+      <!-- Summary Section -->
+      <div class="summary">
+          <h3>Summary</h3>
+          <p><u>Total Responses:</u> <span id="totalResponses">0</span></p>
+          <p><u>Latest Age:</u> <span id="latestAge">0</span></p>
+          <p><u>Have travelled to one or more of these countries (Yes):</u> <span id="yesCount">0</span></p>
+          <p><u>Have not travelled to one or more of these countries (No):</u> <span id="noCount">0</span></p>
+      </div>
+    <div class="email">
+     <form>
+    <label for="emailInput"><small>Sign up via Email to get notified for flight deals :</small></label>
+    <input type="email" id="emailInput" name="email">
+    <button type="button" onclick="validateEmail()">Submit</button>
+      
     </section>
     <br>
     <footer>
       <p>&copy; Leaving Cert 2025 - 205737</p>
     </footer>
-    <script>
-        window.onload = function () {
-            if (window.innerHeight > 1080 || window.innerWidth > 1920) {
-                document.getElementById("popup").style.display = "block";
-                document.getElementById("overlay").style.display = "block";
-            }
-        };
-
-        function handleResponse(response) {
-            console.log("User response:", response);
-            document.getElementById("popup").style.display = "none";
-            document.getElementById("overlay").style.display = "none";
-        }
-    </script>
     <!--<script src="script.js"></script>-->
   </body>
 </html>
