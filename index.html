@@ -68,32 +68,31 @@
     <br>
     <section>
 
-    <h2>Questionnaire</h2>
+    <h2>Mini Survey</h2>
+      <br>
       <form id="feedbackForm">
           <label for="name">Name:</label>
-          <input type="text" id="name" required><br><br>
-  
-          <label for="age">Age:</label>
-          <input type="number" id="age" required><br><br>
-  
-          <label>Have you travelled to any of these countries?</label><br>
-          <input type="radio" id="yes" name="recommend" value="yes" required> Yes
-          <input type="radio" id="no" name="recommend" value="no"> No <br><br>
-  
+          <input type="text" id="name" required>
+        <br>
+        <br>
+          <label>Does your house have a fibre internet connection?</label><br>
+          <input type="radio" id="yes" name="recommend" value="yes" required> True
+          <input type="radio" id="no" name="recommend" value="no"> False 
+        <br>
+        <br>
           <button type="submit">Submit</button>
       </form>
   
       <!-- Summary Section -->
       <div class="summary">
-          <h3>Summary</h3>
-          <p><u>Total Responses:</u> <span id="totalResponses">0</span></p>
-          <p><u>Latest Age:</u> <span id="latestAge">0</span></p>
-          <p><u>Have travelled to one or more of these countries (Yes):</u> <span id="yesCount">0</span></p>
-          <p><u>Have not travelled to one or more of these countries (No):</u> <span id="noCount">0</span></p>
+          <h3>Insight</h3>
+          <p><u>Responses so far:</u> <span id="totalResponses">0</span></p>
+          <p><u>Does your house have a fibre internet connection? (TRUE):</u> <span id="yesCount">0</span></p>
+          <p><u>Does your house have a fibre internet connection? (FALSE):</u> <span id="noCount">0</span></p>
       </div>
     <div class="email">
      <form>
-    <label for="emailInput"><small>Sign up via Email to get notified for flight deals :</small></label>
+    <label for="emailInput"><small>Want us to keep you up to date on this survey? Sign up here:</small></label>
     <input type="email" id="emailInput" name="email">
     <button type="button" onclick="validateEmail()">Submit</button>
       
