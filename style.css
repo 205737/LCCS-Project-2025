@@ -4,20 +4,18 @@
   --color-deep-blue: #050a44;
   --color-bright-blue: #0a21c0;
   --color-light-gray: #b3b4bd;
-  /* i.e. background-colour: var(--color-light-red); */
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Ensures padding and borders don't mess with layout */
-}
+  box-sizing: border-box;
 
 body {
   background-color: var(--color-dark);
   color: var(--color-light-gray);
   font-family: Arial, sans-serif;
-  min-height: 100vh; /* Ensures the body takes up the full viewport height */
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -36,7 +34,7 @@ nav {
   z-index: 1000;
   padding: 15px;
   display: flex;
-  justify-content: flex-end;  /* Align the links to the right */
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -52,8 +50,8 @@ nav a:hover {
 }
 
 nav .active {
-  background-color: var(--color-bright-blue); /* Highlight color */
-  color: white; /* Text color for active link */
+  background-color: var(--color-bright-blue);
+  color: white;
 }
 
 section {
@@ -61,7 +59,7 @@ section {
   background-color: var(--color-mid-dark);
   margin-top: 20px;
   border-radius: 8px;
-  margin: 0 15px; /* Adds space on the sides of the section */
+  margin: 0 15px;
 }
 
 footer {
@@ -69,37 +67,5 @@ footer {
   color: var(--color-light-gray);
   text-align: center;
   padding: 10px;
-  margin-top: auto; /* Pushes the footer to the bottom */
-}
-
-/* Verify Screen Size */
-.verify-popup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    text-align: center;
-}
-.verify-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-}
-.verify-button {
-    margin: 10px;
-    padding: 10px 20px;
-    border: none;
-    background: blue;
-    color: white;
-    cursor: pointer;
-    border-radius: 5px;
+  margin-top: auto;
 }
