@@ -9,8 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     let responses = JSON.parse(localStorage.getItem("responses")) || [];
     function updateSummary() {
         let total = responses.length;
-        let booleanResponses = responses.filter(r => r.recommend === "boolean").length;
-
+        let booleanResponses = responses.filter(r => r.recommend === "true").length; // Fixed
         totalResponses.textContent = total;
         booleanCount.textContent = booleanResponses;
     }
@@ -24,7 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
             alert("Please enter a valid name using only letters, spaces, or hyphens.");
             return;
         }
-
         responses.push({ name, recommend });
         localStorage.setItem("responses", JSON.stringify(responses));
         updateSummary();
