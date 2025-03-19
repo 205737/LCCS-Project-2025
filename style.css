@@ -1,75 +1,87 @@
+/* Define color variables for consistency */
 :root {
-  --color-dark: #141619;
-  --color-mid-dark: #2c2e3a;
-  --color-deep-blue: #050a44;
-  --color-bright-blue: #0a21c0;
-  --color-light-gray: #b3b4bd;
+  --color-dark: #141619; /* Dark background color */
+  --color-mid-dark: #2c2e3a; /* Slightly lighter dark color */
+  --color-deep-blue: #050a44; /* Deep blue color */
+  --color-bright-blue: #0a21c0; /* Bright blue highlight */
+  --color-light-gray: #b3b4bd; /* Light gray text color */
 }
 
+/* Reset default margin, padding, and enable border-box for better sizing */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
 
+/* Body styling */
 body {
-  background-color: var(--color-dark);
-  color: var(--color-light-gray);
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
+  background-color: var(--color-dark); /* Set background color */
+  color: var(--color-light-gray); /* Default text color */
+  font-family: Arial, sans-serif; /* Set font style */
+  min-height: 100vh; /* Ensure full viewport height */
   display: flex;
   flex-direction: column;
 }
 
+/* Header styling */
 header {
-  background-color: var(--color-deep-blue);
-  color: var(--color-light-gray);
+  background-color: var(--color-deep-blue); /* Set header background */
+  color: var(--color-light-gray); /* Text color */
   padding: 20px;
   text-align: center;
 }
 
+/* Center all h2 elements */
 h2 {
   text-align: center;
 }
-  
+
+/* Navigation bar styling */
 nav {
-  background-color: var(--color-mid-dark);
-  position: sticky;
+  background-color: var(--color-mid-dark); /* Navigation background */
+  position: sticky; /* Keep nav bar at top while scrolling */
   top: 0;
-  z-index: 1000;
+  z-index: 1000; /* Ensure it stays above other elements */
   padding: 15px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
+/* Navigation links styling */
 nav a {
-  color: var(--color-light-gray);
-  text-decoration: none;
+  color: var(--color-light-gray); /* Link text color */
+  text-decoration: none; /* Remove underline */
   padding: 10px;
   margin: 0 10px;
 }
 
+/* Change background on hover for better user experience */
 nav a:hover {
   background-color: var(--color-bright-blue);
 }
 
+/* Active navigation link styling */
 nav .active {
-  background-color: var(--color-bright-blue);
-  color: white;
+  background-color: var(--color-bright-blue); /* Highlight current page */
+  color: white; /* Ensure text is readable */
 }
 
+/* Section styling */
 section {
   padding: 20px;
-  background-color: var(--color-mid-dark);
+  background-color: var(--color-mid-dark); /* Set section background */
   margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 8px; /* Rounded corners */
   margin: 0 15px;
 }
 
+/* Footer styling */
 footer {
-  background-color: var(--color-deep-blue);
+  background-color: var(--color-deep-blue); /* Match header */
   color: var(--color-light-gray);
   text-align: center;
   padding: 10px;
-  margin-top: auto;
+  margin-top: auto; /* Push footer to the bottom */
 }
